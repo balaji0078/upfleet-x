@@ -1,0 +1,60 @@
+.Header-container {
+  min-height: 64px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.02), 0 0px 0px -1px rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.20);
+  display: grid;
+  .navbar-brand {
+    padding: 0 !important;
+    display: table;
+    img{
+      height: 46px;
+      width: inherit;
+      object-fit: contain;
+    }
+    span {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .nav-link {
+        transition: none;
+        padding: 4px 16px;
+        color: #0d0d0d !important;
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      li > .active {
+        border : 2px solid var(--background-theme) !important;
+        border-radius: 300px;
+        color : var(--background-theme) !important;
+        transition : color 0.3s ease;
+      }
+      
+      .nav-item {
+        margin: auto 10px;
+      }
+      .nav-link:not(.active):hover {
+        background-color : #f5f5f5;
+        border-radius : 300px;
+        transition :background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms
+      }
+      // li .active:hover {
+      //   background-color: #fff;
+      //   // transition: background-color 0.3s ease-out;
+      // }
+      .MuiSvgIcon-root {
+        fill: #0d0d0d;
+        width: 1em;
+        // height: 1em;
+        display: inline-block;
+        font-size: 20px;
+        transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        flex-shrink: 0;
+        -moz-user-select: none;
+      }
+       li > .active > .MuiSvgIcon-root {
+        fill: var(--background-theme);
+        transition: fill 0.3s ease;
+      }
+}

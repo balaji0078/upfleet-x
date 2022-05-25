@@ -1,0 +1,7 @@
+export { Login } from './Auth'
+export { Home } from './Home'
+export { Home1 } from './Home1'
+export { Bookings } from './Bookings'
+export { Packages } from './Packages'
+export { About } from './About'
+export { Profile } from './Profile' 

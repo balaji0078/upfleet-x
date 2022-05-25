@@ -1,0 +1,42 @@
+.footer{
+
+    margin-top: 1rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 35vh;
+    background: #181A1B !important;
+  }
+  
+  .line-tag{
+    border: 1px solid white;
+    border-color:rgb(209 213 219/var(--tw-border-opacity));
+  
+  }
+  
+  .footer-mob{
+  
+    margin-top: 1rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+   /* p {
+     background: white;
+   }  */
+  
+   .indicator {
+    position: relative;
+    /* padding: 2px; */
+    margin: 2px;
+    /* width: 30px;
+    height: 20px; */
+    line-height: 20px;
+    vertical-align: middle;
+    overflow: visible;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+  }

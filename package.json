@@ -1,0 +1,75 @@
+{
+  "name": "upfleetx-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.1.3",
+    "flowbite": "^1.4.7",
+    "lodash": "^4.17.21",
+    "mdb-react-ui-kit": "^3.0.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "ramda": "^0.28.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.52.1",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4"
+  },
+  "overrides": {
+    "autoprefixer": "10.4.5"
+  },
+  "scripts": {
+    "start": "cross-env REACT_APP_ENV=development REACT_APP_MOCK_ALLOWED=yes react-scripts start",
+    "serve-qa": "cross-env REACT_APP_ENV=qa react-scripts start",
+    "serve-staging": "cross-env REACT_APP_ENV=staging react-scripts start",
+    "serve-prod": "cross-env REACT_APP_ENV=production react-scripts start",
+    "build-dev": "shx rm -rf build-dev && cross-env REACT_APP_ENV=development react-scripts build && shx cp -r build build-dev && shx rm -rf build",
+    "build-qa": "shx rm -rf build-qa && cross-env REACT_APP_ENV=qa react-scripts build && shx cp -r build build-qa && shx rm -rf build",
+    "build-staging": "shx rm -rf build-staging && cross-env REACT_APP_ENV=staging react-scripts build && shx cp -r build build-staging && shx rm -rf build",
+    "build-prod": "shx rm -rf build-prod && cross-env REACT_APP_ENV=production react-scripts build && shx cp -r build build-prod && shx rm -rf build",
+    "build-perf": "shx rm -rf build-perf && cross-env REACT_APP_ENV=performance react-scripts build && shx cp -r build build-perf && shx rm -rf build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cross-env": "^7.0.2",
+    "postcss": "^8.4.14",
+    "shx": "^0.3.3",
+    "tailwindcss": "^3.0.24"
+  }
+}
